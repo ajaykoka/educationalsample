@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eduford University</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+			  <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="Index.html">HOME</a></li>
+					<li><a href="About.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+        <h1>About Us</h1>
+	</section>
+
+    <!-- about us content -->
+    <section class="aboutus">
+        <div class="row">
+         <div class="about-col">
+             <h1>We are the world largest university</h1>
+             <p>Oxford University is situated in a sprawling 89-acre campus at Kukatpally, Hyderabad. 
+				 It has now 4 Constituent Engineering Colleges, one at Hyderabad, one at chennai (omr road), 
+				 and one at Manipur (Maniam dist.). 
+				 Oxford University offers B.Tech. programmes in 24 disciplines and B.Pharm at UG level; 
+				 Integrated 5-year dual degree Masters programme; M.Tech. Programmes in 68 disciplines, M.Pharm. 
+				 in 11 disciplines; M.Sc. in 10 disciplines; MCA, MBA and Double Degree Programmes at P.G. level; 
+				 in addition to the offer of M.S., M.Phil., Ph.D. Research Programmes in various disciplines of Engineering, 
+				 Technology, Science, Management and Humanities. The University has 
+				 Memoranda of University with many national and international organizations.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+         </div>
+         <div class="about-col">
+             <img src="images/about.jpg">
+         </div>
+        </div>
+    </section>
+    
+
+
+	<!--- Footer --->
+	
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, vel.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, vel.
+			<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, vel.</p>
+			<div class="icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-linkedin"></i>
+			</div>
+			<p>Created by Ajay <i class="fa fa-copyright"></i> Copyright ajay.com </p>
+	</section>
+
+	<!--Js for toggle menu-->
+
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right ="0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+	
+</body>
+</html>
